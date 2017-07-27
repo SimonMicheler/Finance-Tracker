@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   
     root 'welcome#home'
   get 'home' ,to: 'welcome#home'
+  
+  get 'my_portfolio', to: "users#my_portfolio" 
+  get 'search_stocks', to: "stocks#search"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
